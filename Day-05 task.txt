@@ -1,0 +1,29 @@
+var resume = {
+  "name": "AJAYKRISHNAN",
+  "age": 26,
+  "DOB": "08/08/1998",
+  "contact_info": {
+    "email": "sjajaykrishna0808@gmail.com",
+    "phone": "9952882885",
+    "address": "no 19, MK Nagar, Madampakkam, Guduvancheri, 603202"
+  },
+  "summary": "To work for an organization which provides me the opportunity to improve my skills and knowledge and to grow along with the objectives of the organization.",
+  "education": {
+    "degree": "BE COMPUTER SCIENCE AND ENGINEERING",
+    "institution": "armcet",
+    "location": "Maraimalai Nagar, Tamil Nadu",
+    "dates": "Graduated May 2020"
+  },
+  "DECLARATION": "I hereby declare that all the details furnished above are true to the best of my knowledge and belief."
+}
+for (let i = 0; i < Object.keys(resume).length; i++) {
+  let key = Object.keys(resume)[i];
+  let value = resume[key];
+  console.log(key + ": " + value);
+}
+for (let key in resume) {
+  if (resume.hasOwnProperty(key)) {
+    let value = resume[key];
+    console.log(key + ": " + value);
+  }
+}
